@@ -39,5 +39,6 @@ jobs:
       
     - name: Save Build Artifacts Locally
       run: |
-        mkdir -p /home/runner/artifacts
-        cp ./build/libs/*.jar /home/runner/artifacts/
+        mkdir -p $HOME/artifacts
+        cp ./build/libs/*.jar $HOME/artifacts/
+
